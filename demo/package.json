@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "react": "^16.5.1",
-    "react-component-bnq": "0.0.10",
+    "react-component-bnq": "^0.0.13",
     "react-dom": "^16.5.1",
     "react-scripts": "1.1.5"
   },

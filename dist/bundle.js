@@ -111,7 +111,7 @@ var CommonList = function (_Component) {
             return _react2.default.createElement(
                 'div',
                 null,
-                '123132----'
+                '13'
             );
         }
     }]);
@@ -156,8 +156,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../node_modules/css-loader/index.js!./index.css", function() {
-			var newContent = require("!!../node_modules/css-loader/index.js!./index.css");
+		module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/less-loader/dist/cjs.js??ref--2-2!./index.less", function() {
+			var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/less-loader/dist/cjs.js??ref--2-2!./index.less");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -175,7 +175,7 @@ exports = module.exports = __webpack_require__(5)(false);
 
 
 // module
-exports.push([module.i, " div{\n     color: red;\n }\n", ""]);
+exports.push([module.i, "div {\n  color: green;\n}\n", ""]);
 
 // exports
 

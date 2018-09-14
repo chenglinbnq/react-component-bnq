@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import './index.css';
+import './index.less';
 
 class CommonList extends Component {
     constructor(props) {
@@ -11,7 +11,7 @@ class CommonList extends Component {
     render() {
 
         return (
-            <div>123132----</div>
+            <div>13</div>
         );
     }
 }

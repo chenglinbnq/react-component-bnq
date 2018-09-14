@@ -5453,9 +5453,9 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-component-bnq@0.0.10:
-  version "0.0.10"
-  resolved "https://registry.npmjs.org/react-component-bnq/-/react-component-bnq-0.0.10.tgz#6ab448c57610fbb039fe990f403054801a246a3d"
+react-component-bnq@^0.0.13:
+  version "0.0.13"
+  resolved "https://registry.npmjs.org/react-component-bnq/-/react-component-bnq-0.0.13.tgz#8d7684d3deb904b9333eb1dba54ef6961715125f"
   dependencies:
     prop-types "^15.6.0"
     react "^16.2.0"
