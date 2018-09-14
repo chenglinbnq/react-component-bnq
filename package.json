@@ -1,7 +1,7 @@
 {
-  "name": "react-tiny-autosuggest",
+  "name": "react-component-bnq",
   "version": "0.0.1",
-  "description": "react tiny auto suggest component",
+  "description": "react component for bnq",
   "main": "dist/bundle.js",
   "files": [
     "dist"
