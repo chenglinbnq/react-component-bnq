@@ -1,3 +1,3 @@
-import TestComponent from './index';
+import AutoSuggest from './AutoSuggest';
 
-export default TestComponent;
+export default AutoSuggest;
