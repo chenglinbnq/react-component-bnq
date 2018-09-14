@@ -111,7 +111,7 @@ var CommonList = function (_Component) {
             return _react2.default.createElement(
                 'div',
                 null,
-                '123132'
+                '123132----'
             );
         }
     }]);

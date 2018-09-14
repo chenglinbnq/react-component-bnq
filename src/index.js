@@ -11,7 +11,7 @@ class CommonList extends Component {
     render() {
 
         return (
-            <div>123132</div>
+            <div>123132----</div>
         );
     }
 }
