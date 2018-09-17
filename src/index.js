@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import './index.less';
 
-class CommonList extends Component {
+class CommonComponent extends Component {
     constructor(props) {
         super(props);
     }
@@ -11,13 +11,13 @@ class CommonList extends Component {
     render() {
 
         return (
-            <div>13</div>
+            <div>13---111</div>
         );
     }
 }
 
-CommonList.propTypes = {
+CommonComponent.propTypes = {
 
 }
 
-export default CommonList;
+export default CommonComponent;

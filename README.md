@@ -3,3 +3,4 @@
 ```
 npm i react-component-bnq
 ```
+

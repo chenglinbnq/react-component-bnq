@@ -95,33 +95,33 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var CommonList = function (_Component) {
-    _inherits(CommonList, _Component);
+var CommonComponent = function (_Component) {
+    _inherits(CommonComponent, _Component);
 
-    function CommonList(props) {
-        _classCallCheck(this, CommonList);
+    function CommonComponent(props) {
+        _classCallCheck(this, CommonComponent);
 
-        return _possibleConstructorReturn(this, (CommonList.__proto__ || Object.getPrototypeOf(CommonList)).call(this, props));
+        return _possibleConstructorReturn(this, (CommonComponent.__proto__ || Object.getPrototypeOf(CommonComponent)).call(this, props));
     }
 
-    _createClass(CommonList, [{
+    _createClass(CommonComponent, [{
         key: 'render',
         value: function render() {
 
             return _react2.default.createElement(
                 'div',
                 null,
-                '13'
+                '13---111'
             );
         }
     }]);
 
-    return CommonList;
+    return CommonComponent;
 }(_react.Component);
 
-CommonList.propTypes = {};
+CommonComponent.propTypes = {};
 
-exports.default = CommonList;
+exports.default = CommonComponent;
 
 /***/ }),
 /* 1 */
