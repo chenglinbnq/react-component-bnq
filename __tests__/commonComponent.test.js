@@ -1,4 +1,4 @@
-import {shallow} from 'enzyme';
+import {shallow,mount} from 'enzyme';
 import React from 'react';
 import Enzyme from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
@@ -20,7 +20,7 @@ test('filter', () => {
     let tree = component.toJSON();
     expect(tree).toMatchSnapshot();
 
-    const filterWrapperTest = shallow(<CommonComponent {...props} />);
-    filterWrapperTest.find('.test').simulate('click');
+    const filterWrapperTest = mount(<CommonComponent {...props} />);
+    filterWrapperTest.find('button.test').simulate('click');
 
 });
