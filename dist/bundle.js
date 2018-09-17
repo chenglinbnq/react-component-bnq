@@ -85,7 +85,9 @@ var _propTypes = __webpack_require__(2);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-__webpack_require__(3);
+var _antd = __webpack_require__(3);
+
+__webpack_require__(4);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -101,17 +103,25 @@ var CommonComponent = function (_Component) {
     function CommonComponent(props) {
         _classCallCheck(this, CommonComponent);
 
-        return _possibleConstructorReturn(this, (CommonComponent.__proto__ || Object.getPrototypeOf(CommonComponent)).call(this, props));
+        var _this = _possibleConstructorReturn(this, (CommonComponent.__proto__ || Object.getPrototypeOf(CommonComponent)).call(this, props));
+
+        _this.testClick = _this.testClick.bind(_this);
+        return _this;
     }
 
     _createClass(CommonComponent, [{
+        key: 'testClick',
+        value: function testClick() {
+            this.props.testClick();
+        }
+    }, {
         key: 'render',
         value: function render() {
 
             return _react2.default.createElement(
-                'div',
-                null,
-                '13---111'
+                _antd.Button,
+                { className: 'test', onClick: this.testClick },
+                'test'
             );
         }
     }]);
@@ -137,12 +147,18 @@ module.exports = require("prop-types");
 
 /***/ }),
 /* 3 */
+/***/ (function(module, exports) {
+
+module.exports = require("antd");
+
+/***/ }),
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(4);
+var content = __webpack_require__(5);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -150,7 +166,7 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(6)(content, options);
+var update = __webpack_require__(7)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -167,10 +183,10 @@ if(false) {
 }
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(5)(false);
+exports = module.exports = __webpack_require__(6)(false);
 // imports
 
 
@@ -181,7 +197,7 @@ exports.push([module.i, "/* stylelint-disable at-rule-empty-line-before,at-rule-
 
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports) {
 
 /*
@@ -263,7 +279,7 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -319,7 +335,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(7);
+var	fixUrls = __webpack_require__(8);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -635,7 +651,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports) {
 
 
