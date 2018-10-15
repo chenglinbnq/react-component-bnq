@@ -14,4 +14,6 @@ npm run test
 npm run build
 
 ##publish
+edit package.json version
+npm run build
 npm run publish
